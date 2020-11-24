@@ -1,10 +1,9 @@
-# Program to write MySQL commands in shell command
+# Program which behaves as mysql.exe
 import mysql.connector
 import os
 import time
 from tabular_form import *
 connection = mysql.connector.connect(host = "165.22.14.77", database = "db_Venkatesh" ,user = "Venkatesh", password = "Venkatesh");
-
 print("Welcome to the MySQL monitor.  Commands end with ; or \\g.")
 print("Your MySQL connection id is 17896")
 print("Server version: 5.7.32-0ubuntu0.18.04.1 (Ubuntu)")
