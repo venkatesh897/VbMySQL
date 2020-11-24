@@ -30,7 +30,7 @@ while True:
             my_cursor.execute(query.replace(";", ""))
             end_time = time.time()
         except mysql.connector.errors.ProgrammingError:
-            print("You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near %s at line 1"%(query))
+            print("Invalid query or syntax.")
             continue
         if query[:6].upper() == 'SELECT'  or query[:4].upper() == 'SHOW' or query[:8].upper() == 'DESCRIBE':
             num_fields = len(my_cursor.description)
